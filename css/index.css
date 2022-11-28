@@ -7,11 +7,13 @@
 
 body {
   background-color: hsl(218, 23%, 16%);
-  padding: 50px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .advice-container {
-  margin: 0 auto;
   position: relative;
   color: hsl(193, 38%, 86%);
   font-family: "Manrope", sans-serif;
@@ -21,7 +23,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 400px;
+  max-width: 320px;
   border-radius: 16px;
   align-items: center;
 }
@@ -51,6 +53,10 @@ body {
   cursor: pointer;
 }
 
+#advice-btn:hover {
+   box-shadow: 0px 0px 80px 5px hsl(150deg 100% 60%);
+}
+
 .advice-divider {
   width: 96%;
   margin-top: 25px;
@@ -66,4 +72,10 @@ body {
   100% {
     transform: rotate(360deg);
   }
+}
+
+@media screen and (min-width: 1024px) {
+   .advice-container {
+      max-width: 400px;
+   }
 }
