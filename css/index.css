@@ -26,7 +26,8 @@ body {
   align-items: center;
 }
 
-.advice-id-text , .advice-id {
+.advice-id-text,
+.advice-id {
   font-size: 12px;
   color: hsl(150, 100%, 66%);
   text-transform: uppercase;
@@ -49,21 +50,20 @@ body {
   padding: 15px 17px;
   cursor: pointer;
 }
- 
+
 .advice-divider {
   width: 96%;
   margin-top: 25px;
 }
 
 .rotate-center {
-	animation: rotate-center 0.8s ease-in-out both;
+  animation: rotate-center 0.8s ease-in-out both;
 }
- @keyframes rotate-center {
-   0% {
-     transform: rotate(0);
-   }
-   100% {
-     transform: rotate(360deg);
-   }
- }
- 
+@keyframes rotate-center {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
