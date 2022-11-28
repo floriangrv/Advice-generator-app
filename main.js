@@ -10,7 +10,8 @@ function getAdvice() {
     }).then(adviceData => {
         const adviceIdd = adviceData.slip.id;
         const advice = adviceData.slip.advice;
-        btn.classList.add("rotate-center")
+        btn.classList.add('rotate-center')
+      
         adviceId.textContent = adviceIdd;
         adviceText.textContent = advice;
     }).catch(error => {
@@ -19,8 +20,12 @@ function getAdvice() {
 }
 
 btn.addEventListener('click', () => {
-    btn.classList.remove("rotate-center")
+    btn.classList.add('rotate-center')
     getAdvice();
+    
+    setTimeout(() => {
+        btn.classList.remove('rotate-center')
+    }, 1500)
     
 });
 
