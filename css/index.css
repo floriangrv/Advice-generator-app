@@ -20,7 +20,7 @@ body {
   text-align: center;
   background-color: hsl(217, 19%, 24%);
   display: flex;
-  padding: 2rem;
+  padding: 2.8rem;
   flex-direction: column;
   justify-content: space-between;
   max-width: 340px;
@@ -50,7 +50,7 @@ body {
   border-radius: 50%;
   bottom: -30px;
   border: none;
-  padding: 15px 17px;
+  padding: 17px 19px;
   cursor: pointer;
 }
 
@@ -65,7 +65,7 @@ body {
 }
 
 .desktop {
-   display: none;
+  display: none;
 }
 .rotate-center {
   animation: rotate-center 0.8s ease-in-out both;
@@ -84,9 +84,9 @@ body {
     max-width: 420px;
   }
   .mobile {
-   display: none;
+    display: none;
   }
   .desktop {
-   display: initial;
+    display: initial;
   }
 }
