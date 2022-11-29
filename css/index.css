@@ -18,28 +18,29 @@ body {
   color: hsl(193, 38%, 86%);
   font-family: "Manrope", sans-serif;
   text-align: center;
-  padding: 50px;
   background-color: hsl(217, 19%, 24%);
   display: flex;
+  padding: 2rem;
   flex-direction: column;
   justify-content: space-between;
-  max-width: 320px;
-  border-radius: 16px;
+  max-width: 340px;
+  border-radius: 1rem;
   align-items: center;
 }
 
 .advice-id-text,
 .advice-id {
-  font-size: 12px;
+  font-size: 0.75rem;
   color: hsl(150, 100%, 66%);
   text-transform: uppercase;
   letter-spacing: 5px;
-  margin-bottom: 16px;
+  margin-bottom: 1.1rem;
+  margin-top: 0.5rem;
 }
 
 .advice-text {
-  font-size: 28px;
-  margin-bottom: 25px;
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
   quotes: initial;
 }
 
@@ -54,14 +55,18 @@ body {
 }
 
 #advice-btn:hover {
-   box-shadow: 0px 0px 80px 5px hsl(150deg 100% 60%);
+  box-shadow: 0px 0px 80px 5px hsl(150deg 100% 60%);
 }
 
 .advice-divider {
-  width: 96%;
-  margin-top: 25px;
+  margin-top: 1.8rem;
+  margin-bottom: 0.85rem;
+  padding-bottom: 0.75rem;
 }
 
+.desktop {
+   display: none;
+}
 .rotate-center {
   animation: rotate-center 0.8s ease-in-out both;
 }
@@ -75,7 +80,13 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
-   .advice-container {
-      max-width: 400px;
-   }
+  .advice-container {
+    max-width: 420px;
+  }
+  .mobile {
+   display: none;
+  }
+  .desktop {
+   display: initial;
+  }
 }
